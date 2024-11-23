@@ -8,8 +8,9 @@
 #include <iostream>
 using namespace std;
 
-// boolean type, In C++, true is internally represented as 1, and false as 0.
+
 void bool_data_type1() {
+    // A boolean type variable in C++ is of type bool. It can hold one of two values: true or false.
     bool isEven = true; // Correct declaration and initialization
 
     if (isEven) {
@@ -19,9 +20,30 @@ void bool_data_type1() {
     }
 }
 
-int main() {
+void bool_data_type2() {
+    bool isEven; // Boolean variable declaration
+    int number;
 
-    bool_data_type1();
+    // Input a number
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // Check if the number is even
+    isEven = (number % 2 == 0); // Assign true if even, false otherwise
+
+    // Output the result
+    if (isEven) {
+        cout << "The number is even." << endl;
+    } else {
+        cout << "The number is odd." << endl;
+    }
+}
+
+int main() {
+     // boolean type, In C++, true is internally represented as 1, and false as 0.
+    // bool_data_type1();
+
+    // bool_data_type2();
 
     return 0;
 }
