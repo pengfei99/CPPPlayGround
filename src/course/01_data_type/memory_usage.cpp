@@ -9,9 +9,17 @@ using namespace std;
 // 字节(byte): 是数据存储的基础单位，1Byte又称为一个字节，用一个字节（Byte）储存，可区别256个数字. 一个Byte由8 bits组成
 // 比特(bit）: 是表示信息的最小单位，是二进制数的一位包含的信息或2个选项中特别指定1个的需要信息量。
 
+// Type	Keyword example
+// Boolean	bool
+// Character	char
+// Integer	int
+// Floating point	float
+// Double floating point	double
+// Valueless	void
+// Wide character	wchar_t
 
-int main()
-{
+
+int main() {
     cout << "type: \t\t" << "************size**************"<< endl;
     cout << "bool: \t\t" << "所占字节数：" << sizeof(bool);
     cout << "\t最大值：" << (numeric_limits<bool>::max)();
