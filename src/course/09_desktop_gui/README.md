@@ -55,3 +55,5 @@ g++ version
 # 2. Install the system dependencies for wxWidgets
 sudo apt-get install libwxgtk3.2-dev
 ```
+
+### 2.2 
