@@ -1,3 +1,6 @@
+#include "bouclier_png.h"
+#include "casd_png.h"
+#include "server_png.h"
 #include <wx/wx.h>
 #include <wx/statbmp.h>
 #include <wx/stattext.h>
@@ -8,23 +11,25 @@
 #include <unordered_map>
 
 // Custom clickable panel
-class ClickableWidget : public wxPanel {
+class ClickableWidget : public wxPanel
+{
 public:
-    ClickableWidget(wxWindow* parent, const wxString& iconPath, const wxString& text, std::function<void()> callback)
+    ClickableWidget(wxWindow *parent, const wxString &text, std::function<void()> callback)
         : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxSize(120, 120)), m_callback(callback)
     {
         SetBackgroundColour(*wxWHITE);
         SetCursor(wxCursor(wxCURSOR_HAND));
 
-        auto* box = new wxBoxSizer(wxVERTICAL);
+        auto *box = new wxBoxSizer(wxVERTICAL);
 
         // Icon
-        wxBitmap bitmap(iconPath, wxBITMAP_TYPE_PNG);
-        auto* icon = new wxStaticBitmap(this, wxID_ANY, bitmap);
+        wxMemoryInputStream iconStream(server_png, server_png_len);
+        wxImage serverIcon(iconStream, wxBITMAP_TYPE_PNG);
+        auto *icon = new wxStaticBitmap(this, wxID_ANY, serverIcon);
         box->Add(icon, 0, wxALIGN_CENTER | wxTOP | wxBOTTOM, 10);
 
         // Text
-        auto* label = new wxStaticText(this, wxID_ANY, text);
+        auto *label = new wxStaticText(this, wxID_ANY, text);
         label->SetFont(wxFont(10, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL));
         box->Add(label, 0, wxALIGN_CENTER | wxBOTTOM, 5);
 
@@ -37,51 +42,62 @@ public:
 private:
     std::function<void()> m_callback;
 
-    void OnHover(wxMouseEvent&) {
+    void OnHover(wxMouseEvent &)
+    {
         SetBackgroundColour(wxColour(224, 224, 224)); // light grey
         Refresh();
     }
 
-    void OnLeave(wxMouseEvent&) {
+    void OnLeave(wxMouseEvent &)
+    {
         SetBackgroundColour(*wxWHITE);
         Refresh();
     }
 
-    void OnClick(wxMouseEvent&) {
+    void OnClick(wxMouseEvent &)
+    {
         SetBackgroundColour(wxColour(179, 229, 252)); // light blue
         Refresh();
-        if (m_callback) m_callback();
+        if (m_callback)
+            m_callback();
     }
 };
 
 // Main application frame
-class SecureHubFrame : public wxFrame {
+class SecureHubFrame : public wxFrame
+{
 public:
-    SecureHubFrame() : wxFrame(nullptr, wxID_ANY, "CASD Secure Hub", wxDefaultPosition, wxSize(800, 600)) {
-        SetIcon(wxIcon("./assets/bouclier.png", wxBITMAP_TYPE_PNG));
+    SecureHubFrame() : wxFrame(nullptr, wxID_ANY, "CASD Secure Hub", wxDefaultPosition, wxSize(800, 600))
+    {
+        wxMemoryInputStream serverIconStream(server_png, server_png_len);
+        wxImage serverImage(serverIconStream, wxBITMAP_TYPE_PNG);
+        SetIcon(wxIcon(wxBitmap(serverImage)));
 
-        auto* panel = new wxPanel(this);
-        auto* vbox = new wxBoxSizer(wxVERTICAL);
+        auto *panel = new wxPanel(this);
+        auto *vbox = new wxBoxSizer(wxVERTICAL);
 
         // Logo
-        wxBitmap logo("./assets/casd.png", wxBITMAP_TYPE_PNG);
-        auto* logoCtrl = new wxStaticBitmap(panel, wxID_ANY, logo);
-        vbox->Add(logoCtrl, 0, wxALIGN_CENTER | wxTOP | wxBOTTOM, 20);
+        // wxMemoryInputStream casdLogoStream(casd_png, casd_png_len);
+        // wxImage casdLogoImage(casdLogoStream, wxBITMAP_TYPE_PNG);
+        // casdLogoImage = casdLogoImage.Scale(200, 100);
+        // wxBitmap casdLogo(casdLogoImage); // Scale the logo
+        // auto *logoCtrl = new wxStaticBitmap(panel, wxID_ANY, casdLogo);
+        // vbox->Add(logoCtrl, 0, wxALIGN_CENTER | wxTOP | wxBOTTOM, 20);
 
         // Welcome Text
-        auto* welcomeText = new wxStaticText(panel, wxID_ANY, "Welcome to the CASD Secure HUB");
+        auto *welcomeText = new wxStaticText(panel, wxID_ANY, "Welcome to the CASD Secure HUB");
         welcomeText->SetFont(wxFont(18, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD));
         welcomeText->SetForegroundColour(wxColour(128, 128, 128)); // grey
         vbox->Add(welcomeText, 0, wxALIGN_CENTER | wxBOTTOM, 20);
 
         // Grid of clickable icons
-        wxGridSizer* grid = new wxGridSizer(4, 10, 10); // 4 columns
+        wxGridSizer *grid = new wxGridSizer(4, 10, 10); // 4 columns
 
-        for (int i = 1; i <= 4; ++i) {
+        for (int i = 1; i <= 4; ++i)
+        {
             wxString label = wxString::Format("Server %d", i);
-            auto* icon = new ClickableWidget(panel, "./assets/server.png", label, [=]() {
-                outputLabel->SetLabel("Connect to server: " + label);
-            });
+            auto *icon = new ClickableWidget(panel, label, [=]()
+                                             { outputLabel->SetLabel("Connect to server: " + label); });
             grid->Add(icon, 0, wxALIGN_CENTER);
         }
 
@@ -97,14 +113,16 @@ public:
     }
 
 private:
-    wxStaticText* outputLabel;
+    wxStaticText *outputLabel;
 };
 
 // wxWidgets entry point
-class SecureHubApp : public wxApp {
+class SecureHubApp : public wxApp
+{
 public:
-    bool OnInit() override {
-        SecureHubFrame* frame = new SecureHubFrame();
+    bool OnInit() override
+    {
+        SecureHubFrame *frame = new SecureHubFrame();
         frame->Show(true);
         return true;
     }

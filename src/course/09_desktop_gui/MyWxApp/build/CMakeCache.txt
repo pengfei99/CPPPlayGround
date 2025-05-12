@@ -413,12 +413,6 @@ WX_zlibd:FILEPATH=WX_zlibd-NOTFOUND
 //Set wxWidgets configuration (mswu)
 wxWidgets_CONFIGURATION:STRING=mswu
 
-//Location of wxWidgets library configuration provider binary (wx-config).
-wxWidgets_CONFIG_EXECUTABLE:FILEPATH=wxWidgets_CONFIG_EXECUTABLE-NOTFOUND
-
-//Cleared.
-wxWidgets_LIB_DIR:PATH=C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib
-
 //Location of wxWidgets resource file compiler binary (wxrc)
 wxWidgets_wxrc_EXECUTABLE:FILEPATH=wxWidgets_wxrc_EXECUTABLE-NOTFOUND
 

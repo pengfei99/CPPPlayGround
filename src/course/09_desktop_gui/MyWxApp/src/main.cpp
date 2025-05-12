@@ -4,6 +4,8 @@
 #include <wx/wx.h>
 // use the wxWidgets header file that contains declarations for wxWidgets classes and functions
 // wxWidgets is a C++ library for creating graphical user interfaces (GUIs).
+#include <wx/mstream.h>
+#include "casd_png.h"
 
 // Main application class definition that initializes the program
 class MyApp : public wxApp
@@ -22,6 +24,7 @@ public:
     // This method is the event handler that's called when the button is clicked
 private:
     void OnButtonClick(wxCommandEvent &event);
+    wxBitmap LoadEmbeddedImage();
 
     wxStaticText *label;
     wxButton *button;
@@ -52,6 +55,9 @@ MyFrame::MyFrame(const wxString &title)
     // Create a static text label with the text "Hello, World!" at position (100, 30) on the panel
     label = new wxStaticText(panel, wxID_ANY, "Hello, World!", wxPoint(100, 30));
 
+    // add an image
+    // wxStaticBitmap *img = new wxStaticBitmap(this, wxID_ANY, LoadEmbeddedImage(), wxPoint(50, 50));
+
     // Create a button with the label "Click Me" at position (100, 70) on the panel
     // The button is created with a unique ID (wxID_ANY) and is associated with the panel
     button = new wxButton(panel, wxID_ANY, "Click Me", wxPoint(100, 70));
@@ -67,4 +73,11 @@ void MyFrame::OnButtonClick(wxCommandEvent &event)
     // Change the label text to "Button Clicked!" when the button is clicked
     // This method belongs to the MyFrame class
     label->SetLabel("Button Clicked!");
+}
+
+wxBitmap MyFrame::LoadEmbeddedImage()
+{
+    wxMemoryInputStream stream(casd_png, casd_png_len);
+    wxImage image(stream, wxBITMAP_TYPE_PNG);
+    return wxBitmap(image);
 }

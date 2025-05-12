@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/main.cpp" "CMakeFiles/MyWxApp.dir/main.cpp.obj" "gcc" "CMakeFiles/MyWxApp.dir/main.cpp.obj.d"
+  "C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/src/main.cpp" "CMakeFiles/MyWxApp.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MyWxApp.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

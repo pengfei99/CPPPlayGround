@@ -71,29 +71,29 @@ include CMakeFiles/SecuHub.dir/flags.make
 CMakeFiles/SecuHub.dir/codegen:
 .PHONY : CMakeFiles/SecuHub.dir/codegen
 
-CMakeFiles/SecuHub.dir/main.cpp.obj: CMakeFiles/SecuHub.dir/flags.make
-CMakeFiles/SecuHub.dir/main.cpp.obj: CMakeFiles/SecuHub.dir/includes_CXX.rsp
-CMakeFiles/SecuHub.dir/main.cpp.obj: C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/SecuHub/main.cpp
-CMakeFiles/SecuHub.dir/main.cpp.obj: CMakeFiles/SecuHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SecuHub.dir/main.cpp.obj"
-	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SecuHub.dir/main.cpp.obj -MF CMakeFiles\SecuHub.dir\main.cpp.obj.d -o CMakeFiles\SecuHub.dir\main.cpp.obj -c C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\main.cpp
+CMakeFiles/SecuHub.dir/src/main.cpp.obj: CMakeFiles/SecuHub.dir/flags.make
+CMakeFiles/SecuHub.dir/src/main.cpp.obj: CMakeFiles/SecuHub.dir/includes_CXX.rsp
+CMakeFiles/SecuHub.dir/src/main.cpp.obj: C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/SecuHub/src/main.cpp
+CMakeFiles/SecuHub.dir/src/main.cpp.obj: CMakeFiles/SecuHub.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SecuHub.dir/src/main.cpp.obj"
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SecuHub.dir/src/main.cpp.obj -MF CMakeFiles\SecuHub.dir\src\main.cpp.obj.d -o CMakeFiles\SecuHub.dir\src\main.cpp.obj -c C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\src\main.cpp
 
-CMakeFiles/SecuHub.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SecuHub.dir/main.cpp.i"
-	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\main.cpp > CMakeFiles\SecuHub.dir\main.cpp.i
+CMakeFiles/SecuHub.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SecuHub.dir/src/main.cpp.i"
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\src\main.cpp > CMakeFiles\SecuHub.dir\src\main.cpp.i
 
-CMakeFiles/SecuHub.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SecuHub.dir/main.cpp.s"
-	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\main.cpp -o CMakeFiles\SecuHub.dir\main.cpp.s
+CMakeFiles/SecuHub.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SecuHub.dir/src/main.cpp.s"
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\SecuHub\src\main.cpp -o CMakeFiles\SecuHub.dir\src\main.cpp.s
 
 # Object files for target SecuHub
 SecuHub_OBJECTS = \
-"CMakeFiles/SecuHub.dir/main.cpp.obj"
+"CMakeFiles/SecuHub.dir/src/main.cpp.obj"
 
 # External object files for target SecuHub
 SecuHub_EXTERNAL_OBJECTS =
 
-SecuHub.exe: CMakeFiles/SecuHub.dir/main.cpp.obj
+SecuHub.exe: CMakeFiles/SecuHub.dir/src/main.cpp.obj
 SecuHub.exe: CMakeFiles/SecuHub.dir/build.make
 SecuHub.exe: C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib/libwxmsw33u_core.a
 SecuHub.exe: C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib/libwxbase33u.a

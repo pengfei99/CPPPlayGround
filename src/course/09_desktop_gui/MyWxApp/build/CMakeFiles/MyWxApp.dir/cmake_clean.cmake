@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MyWxApp.dir/main.cpp.obj"
-  "CMakeFiles/MyWxApp.dir/main.cpp.obj.d"
+  "CMakeFiles/MyWxApp.dir/src/main.cpp.obj"
+  "CMakeFiles/MyWxApp.dir/src/main.cpp.obj.d"
   "MyWxApp.exe"
   "MyWxApp.exe.manifest"
   "MyWxApp.pdb"

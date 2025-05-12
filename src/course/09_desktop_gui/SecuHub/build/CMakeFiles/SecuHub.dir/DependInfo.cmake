@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/SecuHub/main.cpp" "CMakeFiles/SecuHub.dir/main.cpp.obj" "gcc" "CMakeFiles/SecuHub.dir/main.cpp.obj.d"
+  "C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/SecuHub/src/main.cpp" "CMakeFiles/SecuHub.dir/src/main.cpp.obj" "gcc" "CMakeFiles/SecuHub.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

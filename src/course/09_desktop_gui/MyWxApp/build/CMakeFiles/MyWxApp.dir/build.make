@@ -71,29 +71,29 @@ include CMakeFiles/MyWxApp.dir/flags.make
 CMakeFiles/MyWxApp.dir/codegen:
 .PHONY : CMakeFiles/MyWxApp.dir/codegen
 
-CMakeFiles/MyWxApp.dir/main.cpp.obj: CMakeFiles/MyWxApp.dir/flags.make
-CMakeFiles/MyWxApp.dir/main.cpp.obj: CMakeFiles/MyWxApp.dir/includes_CXX.rsp
-CMakeFiles/MyWxApp.dir/main.cpp.obj: C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/main.cpp
-CMakeFiles/MyWxApp.dir/main.cpp.obj: CMakeFiles/MyWxApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyWxApp.dir/main.cpp.obj"
-	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyWxApp.dir/main.cpp.obj -MF CMakeFiles\MyWxApp.dir\main.cpp.obj.d -o CMakeFiles\MyWxApp.dir\main.cpp.obj -c C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\main.cpp
+CMakeFiles/MyWxApp.dir/src/main.cpp.obj: CMakeFiles/MyWxApp.dir/flags.make
+CMakeFiles/MyWxApp.dir/src/main.cpp.obj: CMakeFiles/MyWxApp.dir/includes_CXX.rsp
+CMakeFiles/MyWxApp.dir/src/main.cpp.obj: C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/src/main.cpp
+CMakeFiles/MyWxApp.dir/src/main.cpp.obj: CMakeFiles/MyWxApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyWxApp.dir/src/main.cpp.obj"
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyWxApp.dir/src/main.cpp.obj -MF CMakeFiles\MyWxApp.dir\src\main.cpp.obj.d -o CMakeFiles\MyWxApp.dir\src\main.cpp.obj -c C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\src\main.cpp
 
-CMakeFiles/MyWxApp.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyWxApp.dir/main.cpp.i"
-	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\main.cpp > CMakeFiles\MyWxApp.dir\main.cpp.i
+CMakeFiles/MyWxApp.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyWxApp.dir/src/main.cpp.i"
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\src\main.cpp > CMakeFiles\MyWxApp.dir\src\main.cpp.i
 
-CMakeFiles/MyWxApp.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyWxApp.dir/main.cpp.s"
-	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\main.cpp -o CMakeFiles\MyWxApp.dir\main.cpp.s
+CMakeFiles/MyWxApp.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyWxApp.dir/src/main.cpp.s"
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\src\main.cpp -o CMakeFiles\MyWxApp.dir\src\main.cpp.s
 
 # Object files for target MyWxApp
 MyWxApp_OBJECTS = \
-"CMakeFiles/MyWxApp.dir/main.cpp.obj"
+"CMakeFiles/MyWxApp.dir/src/main.cpp.obj"
 
 # External object files for target MyWxApp
 MyWxApp_EXTERNAL_OBJECTS =
 
-MyWxApp.exe: CMakeFiles/MyWxApp.dir/main.cpp.obj
+MyWxApp.exe: CMakeFiles/MyWxApp.dir/src/main.cpp.obj
 MyWxApp.exe: CMakeFiles/MyWxApp.dir/build.make
 MyWxApp.exe: C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib/libwxmsw33u_core.a
 MyWxApp.exe: C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib/libwxbase33u.a

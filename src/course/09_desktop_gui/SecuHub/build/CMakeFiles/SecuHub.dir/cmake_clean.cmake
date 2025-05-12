@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SecuHub.dir/main.cpp.obj"
-  "CMakeFiles/SecuHub.dir/main.cpp.obj.d"
+  "CMakeFiles/SecuHub.dir/src/main.cpp.obj"
+  "CMakeFiles/SecuHub.dir/src/main.cpp.obj.d"
   "SecuHub.exe"
   "SecuHub.exe.manifest"
   "SecuHub.pdb"

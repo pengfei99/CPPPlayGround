@@ -25,5 +25,9 @@ add_definitions(-DUNICODE -D__UNICODE)
 # Define target and link libraries
 add_executable(SecuHub 
     src/main.cpp
-    )
+    include/bouclier_png.h
+    include/casd_png.h
+    include/server_png.h)
+
+target_include_directories(SecuHub PRIVATE include)
 target_link_libraries(SecuHub ${wxWidgets_LIBRARIES})
