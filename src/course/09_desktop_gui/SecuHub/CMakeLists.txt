@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(MyWxApp)
+project(SecuHub)
 
 set(CMAKE_CXX_STANDARD 17)
 # Set wxWidgets root if needed (for Windows builds)
@@ -23,5 +23,7 @@ include(${wxWidgets_USE_FILE})
 add_definitions(-DUNICODE -D__UNICODE)
 
 # Define target and link libraries
-add_executable(MyWxApp main.cpp)
-target_link_libraries(MyWxApp ${wxWidgets_LIBRARIES})
+add_executable(SecuHub 
+    src/main.cpp
+    )
+target_link_libraries(SecuHub ${wxWidgets_LIBRARIES})

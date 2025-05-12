@@ -1,0 +1,3 @@
+C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/build/CMakeFiles/MyWxApp.dir
+C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/build/CMakeFiles/edit_cache.dir
+C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/09_desktop_gui/MyWxApp/build/CMakeFiles/rebuild_cache.dir
