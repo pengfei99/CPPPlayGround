@@ -5,7 +5,7 @@
 // use the wxWidgets header file that contains declarations for wxWidgets classes and functions
 // wxWidgets is a C++ library for creating graphical user interfaces (GUIs).
 #include <wx/mstream.h>
-#include "casd_png.h"
+
 
 // Main application class definition that initializes the program
 class MyApp : public wxApp
@@ -73,11 +73,4 @@ void MyFrame::OnButtonClick(wxCommandEvent &event)
     // Change the label text to "Button Clicked!" when the button is clicked
     // This method belongs to the MyFrame class
     label->SetLabel("Button Clicked!");
-}
-
-wxBitmap MyFrame::LoadEmbeddedImage()
-{
-    wxMemoryInputStream stream(casd_png, casd_png_len);
-    wxImage image(stream, wxBITMAP_TYPE_PNG);
-    return wxBitmap(image);
 }

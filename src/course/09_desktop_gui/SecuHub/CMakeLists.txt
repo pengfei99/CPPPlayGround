@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Set wxWidgets root if needed (for Windows builds)
 set(wxWidgets_ROOT_DIR "C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets")
 set(wxWidgets_LIB_DIR "C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib")
-# set(wxWidgets_INCLUDE_DIR "C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets-3.2.8/include")
+
 
 # enable unicode support
 set(wxWidgets_USE_UNICODE ON)

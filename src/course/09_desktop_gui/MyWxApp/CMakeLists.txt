@@ -3,9 +3,8 @@ project(MyWxApp)
 
 set(CMAKE_CXX_STANDARD 17)
 # Set wxWidgets root if needed (for Windows builds)
-set(wxWidgets_ROOT_DIR "C:/Users/PLIU/Documents/Tool/msys64/ucrt64/lib/wx")
-# set(wxWidgets_LIB_DIR "C:/Users/PLIU/Documents/Tool/msys64/ucrt64/lib/wx/lib/gcc_lib")
-# set(wxWidgets_INCLUDE_DIR "C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets-3.2.8/include")
+set(wxWidgets_ROOT_DIR "C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets")
+set(wxWidgets_LIB_DIR "C:/Users/PLIU/Documents/Tool/CPP_libs/wxWidgets/lib/gcc_lib")
 
 # enable unicode support
 set(wxWidgets_USE_UNICODE ON)
@@ -14,7 +13,7 @@ set(wxWidgets_USE_UNICODE ON)
 set(wxWidgets_USE_STATIC ON)
 
 # Find wxWidgets with desired components
-find_package(wxWidgets REQUIRED COMPONENTS core base)
+find_package(wxWidgets REQUIRED COMPONENTS net gl media core base)
 
 # Include wxWidgets use file
 include(${wxWidgets_USE_FILE})
@@ -25,9 +24,9 @@ add_definitions(-DUNICODE -D__UNICODE)
 # Define target and link libraries
 add_executable(MyWxApp 
     src/main.cpp
-    include/bouclier_png.h
-    include/casd_png.h
-    include/server_png.h)
+    app.rc
+    )
 
-target_include_directories(MyWxApp PRIVATE include)
+target_include_directories(MyWxApp PRIVATE  ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
 target_link_libraries(MyWxApp ${wxWidgets_LIBRARIES})
