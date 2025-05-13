@@ -1,0 +1,3 @@
+C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/00_env_setup/CMakeProj/build/CMakeFiles/HelloCPP.dir
+C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/00_env_setup/CMakeProj/build/CMakeFiles/edit_cache.dir
+C:/Users/PLIU/Documents/git/CPPPlayGround/src/course/00_env_setup/CMakeProj/build/CMakeFiles/rebuild_cache.dir

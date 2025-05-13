@@ -44,29 +44,29 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\PLIU\Documents\Tool\CMake\cmake-4.0.2-windows-x86_64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\PLIU\Documents\Tool\CMake\cmake-4.0.2-windows-x86_64\bin\cmake.exe -E rm -f
+RM = C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp
+CMAKE_SOURCE_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build
+CMAKE_BINARY_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyWxApp.dir/all
+all: CMakeFiles/HelloCPP.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/MyWxApp.dir/codegen
+codegen: CMakeFiles/HelloCPP.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyWxApp.dir/clean
+clean: CMakeFiles/HelloCPP.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyWxApp.dir
+# Target rules for target CMakeFiles/HelloCPP.dir
 
 # All Build rule for target.
-CMakeFiles/MyWxApp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles --progress-num=1,2 "Built target MyWxApp"
-.PHONY : CMakeFiles/MyWxApp.dir/all
+CMakeFiles/HelloCPP.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\CMakeFiles --progress-num=1,2 "Built target HelloCPP"
+.PHONY : CMakeFiles/HelloCPP.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyWxApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MyWxApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles 0
-.PHONY : CMakeFiles/MyWxApp.dir/rule
+CMakeFiles/HelloCPP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/HelloCPP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\CMakeFiles 0
+.PHONY : CMakeFiles/HelloCPP.dir/rule
 
 # Convenience name for target.
-MyWxApp: CMakeFiles/MyWxApp.dir/rule
-.PHONY : MyWxApp
+HelloCPP: CMakeFiles/HelloCPP.dir/rule
+.PHONY : HelloCPP
 
 # codegen rule for target.
-CMakeFiles/MyWxApp.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles --progress-num=1,2 "Finished codegen for target MyWxApp"
-.PHONY : CMakeFiles/MyWxApp.dir/codegen
+CMakeFiles/HelloCPP.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\CMakeFiles --progress-num=1,2 "Finished codegen for target HelloCPP"
+.PHONY : CMakeFiles/HelloCPP.dir/codegen
 
 # clean rule for target.
-CMakeFiles/MyWxApp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/clean
-.PHONY : CMakeFiles/MyWxApp.dir/clean
+CMakeFiles/HelloCPP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/clean
+.PHONY : CMakeFiles/HelloCPP.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

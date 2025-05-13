@@ -47,27 +47,27 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\PLIU\Documents\Tool\CMake\cmake-4.0.2-windows-x86_64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\PLIU\Documents\Tool\CMake\cmake-4.0.2-windows-x86_64\bin\cmake.exe -E rm -f
+RM = C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp
+CMAKE_SOURCE_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build
+CMAKE_BINARY_DIR = C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	C:\Users\PLIU\Documents\Tool\CMake\cmake-4.0.2-windows-x86_64\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\Users\PLIU\Documents\Tool\CMake\cmake-4.0.2-windows-x86_64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\CMakeFiles C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\09_desktop_gui\MyWxApp\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PLIU\Documents\git\CPPPlayGround\src\course\00_env_setup\CMakeProj\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyWxApp
+# Target rules for targets named HelloCPP
 
 # Build rule for target.
-MyWxApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyWxApp
-.PHONY : MyWxApp
+HelloCPP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HelloCPP
+.PHONY : HelloCPP
 
 # fast build rule for target.
-MyWxApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/build
-.PHONY : MyWxApp/fast
+HelloCPP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/build
+.PHONY : HelloCPP/fast
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -141,7 +141,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -149,7 +149,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyWxApp.dir\build.make CMakeFiles/MyWxApp.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCPP.dir\build.make CMakeFiles/HelloCPP.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MyWxApp
+	@echo ... HelloCPP
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -1,0 +1,3 @@
+C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\HelloCPP.dir/objects.a
+C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\ar.exe qc CMakeFiles\HelloCPP.dir/objects.a @CMakeFiles\HelloCPP.dir\objects1.rsp
+C:\Users\PLIU\Documents\Tool\msys64\ucrt64\bin\c++.exe -Wl,--whole-archive CMakeFiles\HelloCPP.dir/objects.a -Wl,--no-whole-archive -o HelloCPP.exe -Wl,--out-implib,libHelloCPP.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\HelloCPP.dir\linkLibs.rsp
